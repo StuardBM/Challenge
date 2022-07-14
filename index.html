@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Text Encryptor</title>
+
+        <link rel="icon" href="images/encryptor-logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <!--Linea que permite al usuario abrir la página de "alura Latam" con un click en el código de alura-->
+           <a href="https://www.aluracursos.com/" target="_blank"> <img src="images/Vector.png" class="logo" alt="logo alura latam"></a>
+        </header>
+
+        <main>
+
+            <section>
+                <textarea type="text" name="text" cols="16" rows="8" placeholder="Digite el texto que desea encriptar" class="textarea-text"></textarea>
+            </section>
+            
+            <div class="info">
+                <h6 class="text-info">Solo letras minúsculas y sin acentos</h6>
+                <img src="images/Caution-mark.png" class="caution-mark">
+            </div>
+           
+            
+           <section class="buttons">
+               <button type="button" onclick="btnEncriptar()" class="encrypt-button">Encrypt</button>
+               <button type="button" onclick="btnDesencriptar()" class="decrypt-button">Decrypt</button>
+               <button type="button" onclick="btnCopy()" id="copy" class="copy-button">Copy</button>
+           </section>
+
+           <section class="text-area">
+                <img src="/images/Muñeco.png" id="munieco" class="munnieco">
+                <label id="text-not-found" class="text1">Ningún mensaje fue encontrado</label>
+                <label id="text-put" class="text2">Ingrese el texte que desea encriptar o desencriptar</label>
+                <textarea type="text" name="text" cols="18" rows="8" style="border:none;" id="text-out" class="output-text" readonly></textarea>
+               
+           </section>
+
+        </main>
+
+        <footer>
+            <img src="/images/encryptor-logo.png" class="logo-footer" alt="Text Encryptor Logo">
+            <p class="copyright">&copy Copyright Text-Encryptor 2022</p>                
+            <p class="student">Taylor Balmaceda Montero</p>
+            <a  href="https://www.linkedin.com/in/taylor-stuard-balmaceda-montero-b9935b1ab/?originalSubdomain=cr" target="_blank"><img src="/images/linkedin-black-logo.png" class="logo-linkedin" alt="Taylor Balmaceda LinkedIn"></a>
+
+        </footer>
+    </body>
+
+    <script src="js/encrypt.js"></script>
+
+
+
+</html>
